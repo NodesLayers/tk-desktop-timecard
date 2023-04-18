@@ -1,7 +1,10 @@
 import sgtk
 from sgtk.platform.qt import QtCore, QtGui
 
-import cPickle
+try:
+    import _pickle as cPickle
+except:
+    import cPickle
 
 from ..ui.my_time_form import Ui_MyTimeForm
 
